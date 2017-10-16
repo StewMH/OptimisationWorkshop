@@ -16,4 +16,4 @@ RUN apt install -y linux-tools-common
 RUN apt install -y kcachegrind
 RUN apt install -y google-perftools
 RUN apt install -y git
-git clone https://github.com/StewMH/OptimisationWorkshop.git
+RUN git clone https://github.com/StewMH/OptimisationWorkshop.git
