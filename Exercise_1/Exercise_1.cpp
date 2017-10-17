@@ -10,7 +10,7 @@
 // where X goes from 0 to 3
 // Time and profile your output
 // time ./Exercise_1
-// valgrind --tool=cachegrind ./Exercise_1
+// valgrind --tool=callgrind ./Exercise_1
 
 bool isPrime(unsigned int n) {
   for (unsigned int i = 2; i < n; i++) {

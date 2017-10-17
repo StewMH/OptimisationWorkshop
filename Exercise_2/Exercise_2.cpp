@@ -13,7 +13,7 @@
 // where X goes from 0 to 3
 // Time and profile your output
 // time ./Exercise_2
-// valgrind --tool=cachegrind ./Exercise_2
+// valgrind --tool=callgrind ./Exercise_2
 
 int main() {
 
