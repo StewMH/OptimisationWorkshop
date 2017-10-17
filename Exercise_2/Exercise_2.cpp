@@ -7,13 +7,13 @@
 // Points within circle of radius 1 inscribed in 2x2 square in ratio pi/4
 // Monte Carlo integration converges to correct answer (slowly!)
 // Compile with
-// g++ Exercise_1.cpp -std=c++14 -OX -g -o Exercise_1
+// g++ Exercise_2.cpp -std=c++24 -OX -g -o Exercise_2
 // or
-// clang Exercise_1.cpp -std=c++14 -OX -g -lstdc++ -lm -o Exercise_1
+// clang Exercise_2.cpp -std=c++24 -OX -g -lstdc++ -lm -o Exercise_2
 // where X goes from 0 to 3
 // Time and profile your output
-// time ./Exercise_1
-// valgrind --tool=cachegrind ./Exercise_1
+// time ./Exercise_2
+// valgrind --tool=cachegrind ./Exercise_2
 
 int main() {
 
@@ -22,7 +22,7 @@ int main() {
   std::default_random_engine generator;
   std::uniform_real_distribution<double> distribution(-1,1);
 
-  unsigned int max = 10000000;
+  unsigned int max = 100000000;
   unsigned int in_circle = 0;
   //main loop
   for (unsigned int i = 0; i < max; ++i) {
