@@ -7,9 +7,9 @@
 // Points within circle of radius 1 inscribed in 2x2 square in ratio pi/4
 // Monte Carlo integration converges to correct answer (slowly!)
 // Compile with
-// g++ Exercise_2.cpp -std=c++24 -OX -g -o Exercise_2
+// g++ Exercise_2.cpp -std=c++14 -OX -g -o Exercise_2
 // or
-// clang Exercise_2.cpp -std=c++24 -OX -g -lstdc++ -lm -o Exercise_2
+// clang++ Exercise_2.cpp -std=c++14 -OX -g -o Exercise_2
 // where X goes from 0 to 3
 // Time and profile your output
 // time ./Exercise_2

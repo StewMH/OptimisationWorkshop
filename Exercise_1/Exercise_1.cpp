@@ -6,7 +6,7 @@
 // Compile with
 // g++ Exercise_1.cpp -std=c++14 -OX -g -o Exercise_1
 // or
-// clang Exercise_1.cpp -std=c++14 -OX -g -lstdc++ -lm -o Exercise_1
+// clang++ Exercise_1.cpp -std=c++14 -OX -g -o Exercise_1
 // where X goes from 0 to 3
 // Time and profile your output
 // time ./Exercise_1
