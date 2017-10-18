@@ -1,7 +1,7 @@
 #include <vector>
 #include <iostream>
 
-//Memory allocation example
+//Memory allocation example - allocates 1.6 gigabytes of memory then stops
 // Compile with
 // g++ Exercise_3.cpp -std=c++14 -OX -g -o Exercise_3
 // or
@@ -11,6 +11,7 @@
 // time ./Exercise_1
 // valgrind --tool=callgrind ./Exercise_3
 
+//A simple data object containing three ints
 struct A 
 {
  int x;
@@ -21,7 +22,7 @@ struct A
 
 int main() {
 
-  unsigned int max = 1000;
+  unsigned int max = 100000000;
   std::vector<A> vec_A;
   for (unsigned int i = 0; i < max; i++) {
     A i_A;
@@ -29,8 +30,8 @@ int main() {
     i_A.y = i+1; 
     i_A.z = i+2; 
     vec_A.push_back(i_A);
-    std::cout << vec_A.size() << std::endl;
-    std::cout << vec_A.capacity() << std::endl;
+    //std::cout << vec_A.size() << std::endl;
+    //std::cout << vec_A.capacity() << std::endl;
   }
-  std::cout << vec_A.size() << std::endl;
+  //std::cout << vec_A.size() << std::endl;
 }
