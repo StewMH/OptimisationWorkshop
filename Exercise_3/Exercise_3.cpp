@@ -3,9 +3,9 @@
 
 //Memory allocation example - allocates 1.6 gigabytes of memory then stops
 // Compile with
-// g++ Exercise_3.cpp -std=c++14 -OX -g -o Exercise_3
+// g++ Exercise_3.cpp -OX -g -o Exercise_3
 // or
-// clang++ Exercise_3.cpp -std=c++14 -OX -g -o Exercise_3
+// clang++ Exercise_3.cpp -OX -g -o Exercise_3
 // where X goes from 0 to 3
 // Time and profile your output
 // time ./Exercise_1

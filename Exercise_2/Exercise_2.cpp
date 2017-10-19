@@ -11,6 +11,7 @@
 // or
 // clang++ Exercise_2.cpp -std=c++14 -OX -g -o Exercise_2
 // where X goes from 0 to 3
+// For older compilers, replace c++14 with c++11 or c++0x
 // Time and profile your output
 // time ./Exercise_2
 // valgrind --tool=callgrind ./Exercise_2
