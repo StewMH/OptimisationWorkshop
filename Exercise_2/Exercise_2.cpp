@@ -15,19 +15,33 @@
 // time ./Exercise_2
 // valgrind --tool=callgrind ./Exercise_2
 
+
+//Linear congruential random number generator
+//Recurrence relation x_m_plus_1 = (a*x_m + c) % m
+//Generates numbers between 0 and m
+unsigned int random_LCG(unsigned int x_m) {
+  unsigned int a = 1103515245; 
+  unsigned int m = 2147483647; //2**31 - 1
+  unsigned int c = 1013904223; 
+  unsigned int x_m_plus_1 = (a*x_m + c) % m;
+  return x_m_plus_1;
+}
+
 int main() {
 
 
   //initialisation
-  std::default_random_engine generator;
-  std::uniform_real_distribution<double> distribution(-1,1);
-
   unsigned int max = 100000000;
   unsigned int in_circle = 0;
   //main loop
+  unsigned int x_num = 42;//Seed values for x and y
+  unsigned int y_num = random_LCG(x_num);
+  unsigned int denom = 2147483647;
   for (unsigned int i = 0; i < max; ++i) {
-    double x = distribution(generator);
-    double y = distribution(generator);
+    x_num = random_LCG(x_num);
+    y_num = random_LCG(y_num);
+    double x = x_num/double(denom);
+    double y = y_num/double(denom);
     double r = std::sqrt(x*x + y*y);
     if (r < 1) { 
       in_circle++;
