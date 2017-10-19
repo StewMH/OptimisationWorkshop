@@ -4,12 +4,15 @@ Material for workshop on optimisation and profiling for data-intensive science.
 
 Examples are likely to work best with native Linux (e.g. Ubuntu 16.04), or Mac with Homebrew. Note that perf is only available on linux
 
-Need: gdb, g++, clang, valgrind, kcachegrind, perf, jemalloc, tcmalloc
+Need: g++, clang, gdb, valgrind (or ssh access to a machine with these installed)
 
-Docker image available at https://store.docker.com/community/images/stewartmh/ubuntu-proftools
+Nice to have: google-perftools, libjemalloc
+
+
+Pre-installed docker image available at https://store.docker.com/community/images/stewartmh/ubuntu-proftools
 
 
 
-```docker run --privileged -v $HOME:$HOME -e DISPLAY=${ip}:0 --security-opt seccomp=unconfined -it stewartmh/ubuntu-proftools:latest```
+```docker run -it stewartmh/ubuntu-proftools:latest```
 
 
