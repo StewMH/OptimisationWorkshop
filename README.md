@@ -6,7 +6,7 @@ Examples are likely to work best with native Linux (e.g. Ubuntu 16.04), or Mac w
 
 Need: g++, clang, gdb, valgrind (or ssh access to a machine with these installed)
 
-Nice to have: google-perftools, libjemalloc
+Nice to have: google-perftools, libjemalloc, massif-visualizer, perf
 
 
 Pre-installed docker image available at https://store.docker.com/community/images/stewartmh/ubuntu-proftools
