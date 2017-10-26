@@ -13,6 +13,6 @@ Pre-installed docker image available at https://store.docker.com/community/image
 
 
 
-```docker run -it stewartmh/ubuntu-proftools:latest```
+```docker run -it --privileged stewartmh/ubuntu-proftools:latest```
 
 
